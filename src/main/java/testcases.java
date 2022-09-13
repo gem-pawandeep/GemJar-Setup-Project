@@ -27,4 +27,11 @@ public class testcases extends GemjarTestngBase {
                 "He heard the loud impact before he ever saw the result. It had been so loud that it had actually made him jump back in his seat. As soon as he recovered from the surprise, he saw the crack in the windshield. It seemed to be an analogy of the current condition of his life.", STATUS.PASS);
     }
 
+    @Test(dataProvider = "GemJarDataProvider", dataProviderClass = GemJarDataProvider.class)
+    public void dataProviderSample(JsonObject inputData) {
+      String s=inputData.get("name").getAsString();
+      String s1=inputData.get("email").getAsString();
+      GemTestReporter.addTestStep("s & s1","name= "+s+" email= "+s1,STATUS.PASS);
+    }
+
 }

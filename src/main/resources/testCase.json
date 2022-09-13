@@ -3,5 +3,12 @@
     "runFlag": "Y",
     "inputData":{
     }
+  },
+  "dataProviderSample": {
+    "runFlag": "Y",
+    "inputData":{
+      "name": "ABCD",
+      "email": "abc@gmail.com"
+    }
   }
 }
